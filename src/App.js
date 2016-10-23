@@ -1,24 +1,24 @@
-import 'aframe';
-import 'aframe-animation-component';
-import 'aframe-text-component';
-import 'babel-polyfill';
-import {Entity, Scene} from 'aframe-react';
-import React from 'react';
+import 'aframe'
+import 'aframe-animation-component'
+import 'aframe-text-component'
+import 'babel-polyfill'
+import {Entity, Scene} from 'aframe-react'
+import React from 'react'
 
-import Camera from './components/Camera';
-import Sky from './components/Sky';
+import Camera from './components/Camera'
+import Sky from './components/Sky'
 
 class App extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = {color: 'red'};
+    super(props)
+    this.state = {color: 'red'}
   }
 
   changeColor() {
-    const colors = ['red', 'orange', 'yellow', 'green', 'blue'];
+    const colors = ['red', 'orange', 'yellow', 'green', 'blue']
     this.setState({
       color: colors[Math.floor(Math.random() * colors.length)]
-    });
+    })
   }
 
   render () {
@@ -50,7 +50,7 @@ class App extends React.Component {
             material={{color: '#24CAFF'}}/>
         </Entity>
       </Scene>
-    );
+    )
   }
 }
 
