@@ -4,6 +4,7 @@ import 'aframe-text-component'
 import 'babel-polyfill'
 import {Entity, Scene} from 'aframe-react'
 import React from 'react'
+require('aframe-leap-hands').registerAll()
 
 import Camera from './components/Camera'
 import Sky from './components/Sky'
@@ -31,6 +32,9 @@ class App extends React.Component {
             animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150">
           </a-cursor>
         </Camera>
+
+        <Entity leap-hand='hand: left'/>
+        <Entity leap-hand='hand: right'/>
 
         <Sky
           color='#1DACFC'/>

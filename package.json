@@ -11,6 +11,7 @@
     "aframe": "^0.3.2",
     "aframe-animation-component": "^3.0.4",
     "aframe-bmfont-text-component": "^0.1.4",
+    "aframe-leap-hands": "^0.7.2",
     "aframe-react": "^3.3.0",
     "aframe-text-component": "^0.3.0",
     "babel-polyfill": "^6.16.0",
